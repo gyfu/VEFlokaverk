@@ -11,6 +11,9 @@ strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fiel
     background: transparent;
     text-decoration: none;
 }
+h1 {
+    font-weight: normal;
+}
 .topbar {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -20,7 +23,7 @@ strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fiel
 	position: fixed;
 	width: 100%;
         box-shadow: 0px 10px 10px #000;
-        
+
 }
 .topbar h1 {
 	grid-column-start: 1;
@@ -48,7 +51,7 @@ strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fiel
         box-shadow: 0px -10px 10px #000;
         display: grid;
         grid-template-columns: 0.1fr 1fr 1fr 1fr 0.1fr;
-        grid-template-rows: 0.5fr 0.5fr 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr 1fr 1fr 1fr 0.5fr;
         width: 100%;
 }
 .adal h1 {
@@ -60,40 +63,137 @@ strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fiel
         font-size: 2em;
 }
 .adal .intro{
-	grid-column-start: 2;
-	grid-column-end: 5;
-	grid-row-start: 4;
-	grid-row-end: 7;
-        border: 1px solid black;
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-row-start: 3;
+        grid-row-end: 4;
         text-align: center;
+        display: grid;
+        grid-template-columns:1fr 1fr 2fr;
+        grid-template-rows: 1fr;
 }
-.adal .leikir {
-        grid-column-start: 1;
-        grid-column-end: 6;
-        grid-row-start: 8;
-        grid-row-end: 12;
-        background-color: black;
+.intro img {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
 }
-.adal .myndir {
+.adal h1 {
+    text-decoration-color: #00b5e2;
+    text-decoration: underline;
+    font-size: 3em;
+}
+.intro p {
+    margin-top: 1em;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    font-size: 2.5em;
+    animation-name: fadeinn;
+    animation-duration: 3s;
+    text-align: left;
+}
+@keyframes fadeinn {
+    from {color: white;}
+    to {color: black;}
+}
+.adal .utgafu{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    text-align:center;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+.utgafu p {
+    margin-top: 1em;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    font-size: 2.5em;
+    animation-name: fadeinn;
+    animation-duration: 3s;
+    text-align: left;
+}
+.utgafu img {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.utgafu .one{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.utgafu .two{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.adal .pro{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 7;
+    grid-row-end: 8;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+.pro img {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    border:2px solid #00b5e2;
+}
+.pro p {
+    font-size: 2em;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin-right: 1em;
+}
+.infobar {
+    margin-top: 5em;
+    display: grid;
+    grid-template-columns: 0.1fr 1fr 1fr 1fr 0.1fr;
+    grid-template-rows: 0.3fr 1fr 1fr 0.3fr;
+    background-color: #2D3F44;
+    text-align: center;
+    color: white;
+}
+.infobar ul{
+    list-style: none;
+}
+.infobar h1 {
+    font-weight: normal;
+    font-size: 2em;
+}
+.infobar a {
+    color: white;
+}
+.infobar a:hover{
+    color: #00b5e2;
+}
+.eg {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
 
 }
-.adal .annad {
+.heimildir {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 4;
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
